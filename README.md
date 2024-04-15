@@ -60,7 +60,7 @@ Floac\Ukrpost\Facades\Dictionary::postOfficesOpenHours(string $zip_code, int $po
 #### Get post offices by geolocation
 Отримання інформації про найближчі поштові відділення
 ```
-Floac\Ukrpost\Facades\Dictionary::postOfficesByGeolocation(float $lat, float $lng, int $maxdistance = 1);
+Floac\Ukrpost\Facades\Dictionary::postOfficesByGeolocation(float $lat, float $long, int $maxdistance = 1);
 ```
 #### Get city by postcode
 Отримання інформації про населений пункт за індексом
