@@ -12,7 +12,7 @@ $ composer require floac/laravel-ukrpost
     - [streets](#get-streets) - Отримання переліку вулиць.
     - [houses](#get-houses) - Отримання переліку будинків вулиць.
     - [post offices](#get-post-offices) - Отримання інформації про поштове відділення.
-    - [post offices open hours](#get-post-offices-open-hours) - Отримання інформації про графік робОти поштового відділення.
+    - [post offices open hours](#get-post-offices-open-hours) - Отримання інформації про графік роботи поштового відділення.
     - [post offices by geolocation](#get-post-offices-by-geolocation) - Отримання інформації про найближчі поштові відділення.
     - [city by postcode](#get-city-by-postcode) - Отримання інформації про населений пункт за індексом.
     - [address by postcode](#get-address-by-postcode) - Отримання адресної інформації за індексом.
