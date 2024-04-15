@@ -24,10 +24,7 @@
         "laravel": {
             "providers": [
                 "Floac\\UkrPost\\ServiceProvider"
-            ],
-        "aliases": {
-            "UkrposhtaDictionary": "Floac\\UkrPost\\Facades\\Dictionary"
+            ]
         }
     }
-  }
 }
