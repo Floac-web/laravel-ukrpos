@@ -1,6 +1,6 @@
 ## Встановлення
 ```
-$ composer require floac/laravel-ukrpost
+composer require floac/laravel-ukrpost
 ```
 
 ## Реалізовано
