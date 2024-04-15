@@ -23,7 +23,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Floac\\UkrPost\\ServiceProvider"
+                "Floac\\Ukrpost\\ServiceProvider"
             ]
         }
     }
