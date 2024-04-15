@@ -1,0 +1,33 @@
+{
+    "name": "floac/laravel-ukrpost",
+    "description": "UkrPoshta api integration",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "laravel-UkrPost"
+    ],
+    "version": "1.0.0",
+    "authors": [
+        {
+        "name": "floac"
+        }
+    ],
+    "require": {
+        "laravel/framework": "> 9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Floac\\Ukrpost\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Floac\\UkrPost\\ServiceProvider"
+            ],
+        "aliases": {
+            "UkrposhtaDictionary": "Floac\\UkrPost\\Facades\\Dictionary"
+        }
+    }
+  }
+}
