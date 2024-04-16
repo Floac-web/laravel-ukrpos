@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static array postOfficesOpenHours(string $zip_code, int $post_office_id = null)
  * @method static array postOfficesByGeolocation(float $lat, float $lng, int $maxdistance = 1)
  * @method static array citiesByPostcode(string $postcode)
- * @method static array getAddressesByPostcode(string $postcode)
+ * @method static array addressesByPostcode(string $postcode)
  */
 class Dictionary extends Facade
 {
