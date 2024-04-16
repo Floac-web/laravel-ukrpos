@@ -70,6 +70,6 @@ Floac\Ukrpost\Facades\Dictionary::citiesByPostcode(string $postcode);
 #### Get address by postcode
 Отримання адресної інформації за індексом
 ```
-Floac\Ukrpost\Facades\Dictionary::getAddressesByPostcode(string $postcode);
+Floac\Ukrpost\Facades\Dictionary::addressesByPostcode(string $postcode);
 ```
 
