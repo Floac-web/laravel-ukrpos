@@ -4,7 +4,9 @@
     "license": "MIT",
     "keywords": [
         "laravel",
-        "laravel-UkrPost"
+        "laravel-ukrpost",
+        "ukrpost",
+        "ukrposhta"
     ],
     "version": "1.0.1",
     "authors": [
