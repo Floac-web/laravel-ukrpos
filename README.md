@@ -16,7 +16,10 @@ composer require floac/laravel-ukrpost
     - [post offices by geolocation](#get-post-offices-by-geolocation) - Отримання інформації про найближчі поштові відділення.
     - [city by postcode](#get-city-by-postcode) - Отримання інформації про населений пункт за індексом.
     - [address by postcode](#get-address-by-postcode) - Отримання адресної інформації за індексом.
-
+- [Адреси](#address) - створення адрес. (для створення відправки)
+- [Клієнти](#clients) - створення клієнтів. (для створення відправки)
+- [Відправка](#document) - створення відправки
+    
 ### Address classifier
 
 #### Get regions
@@ -72,4 +75,64 @@ Floac\Ukrpost\Facades\Dictionary::citiesByPostcode(string $postcode);
 ```
 Floac\Ukrpost\Facades\Dictionary::addressesByPostcode(string $postcode);
 ```
+
+### Відправки
+
+#### Address
+Створення адреси
+```
+    $api = new Floac\Ukrpost\Document\Api(
+        'bearerToken',
+        'counterpartyToken'
+    );
+
+    $address = new Floac\Ukrpost\Document\Models\Address($api);
+
+    $address->set(
+        postcode: '07401',
+        country: 'UA',
+        region: 'Київська',
+        city: 'Бровари',
+        district: 'Київський',
+        street: 'Котляревського',
+        houseNumber: '12',
+        apartmentNumber: '33'
+    );
+
+    $address->save();
+```
+
+#### Clients
+Створення клієнта
+```
+    $api = new Floac\Ukrpost\Document\Api(
+        'bearerToken',
+        'counterpartyToken'
+    );
+
+    $client = new Client($api);
+
+    $client->set(
+        firstName: 'Олександр',
+        lastName: 'Петренко',
+        phone: 380663443224,
+        address: $address,
+    );
+
+    $client->save();
+```
+
+#### Document
+Створення відправки
+```
+    $api = new Floac\Ukrpost\Document\Api(
+        'bearerToken',
+        'counterpartyToken'
+    );
+
+    $document = new Document($api);
+
+    $document->save($senderClient, $recipientClient, $parcel);
+```
+
 
