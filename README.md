@@ -56,7 +56,7 @@ Floac\Ukrpost\Facades\Dictionary::houses(int $street_id, string $housenumber = n
 Floac\Ukrpost\Facades\Dictionary::postOffices(string $zip_code = null, int $street_id = null, int $city_id = null, int $district_id = null, int $region_id = null);
 ```
 #### Get post offices open hours
-Отримання інформації про графік робОти поштового відділення
+Отримання інформації про графік роботи поштового відділення
 ```php
 Floac\Ukrpost\Facades\Dictionary::postOfficesOpenHours(string $zip_code, int $post_office_id = null);
 ```
